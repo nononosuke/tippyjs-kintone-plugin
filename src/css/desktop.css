@@ -1,0 +1,14 @@
+/* TIPSボタン共通 */
+.tippyjs-button-custom{
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 3px 8px 3px 8px;
+}
+
+/* TIPSコンテンツ共通 */
+.tippyjs-content-custom{
+  text-align:left;
+  background: white;
+  color: dimgray;
+  padding:5px;
+}

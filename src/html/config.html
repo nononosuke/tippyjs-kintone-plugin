@@ -1,0 +1,131 @@
+<!-- 
+MIT License
+Copyright (c) 2021 nononosuque
+
+-->
+<section>
+  <form class="js-submit-settings">
+    <div class="kintoneplugin-row">
+      <label class="kintoneplugin-label">
+        ⓪ CSVファイルインポート
+      </label>
+      <div>
+        <div id="upFileWrap">
+          <div id="inputFile">
+            <p id="dropArea">または<br>ここにファイルをドロップしてください。</p>
+
+            <div id="inputFileWrap">
+              <input type="file" name="uploadFile" id="uploadFile" accept="text/csv">
+              <div id="btnInputFile"><span>ファイルを選択する</span></div>
+              <div id="btnChangeFile"><span>ファイルを変更する</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="inputFileInfo">
+        </div>
+
+        <select name="csvImport" id="csvImportType">
+          <option value="DETAIL" selected>参照/編集画面</option>
+          <option value="LIST">一覧画面</option>
+          <option value="CSS">CSV</option>
+        </select>
+        <input type="button" value="　EXPORT　" class="csvExport">
+      </div>
+      <hr>
+
+      <label class="kintoneplugin-label">
+        ① 編集画面/詳細画面で表示するツールチップの情報を設定します。
+      </label>
+      <div class="kintoneplugin-desc">
+        ※ツールチップを設定可能なスペースは、予めIDが設定されているスペースフィールドに限定されます。
+      </div>
+      <hr>
+      <!-- TIPS詳細画面設定情報 -->
+      <div class="kintone-plugin-table-data">
+        <table name="tips-config-detail">
+          <tr>
+            <th>スペース要素id</th>
+            <th>TIPS名</th>
+            <th>TIPSの要素</th>
+            <th>TIPS表示位置</th>
+            <th>TIPSの内容</th>
+            <th>リンク先(a要素の場合)</th>
+          </tr>
+        </table>
+      </div>
+
+      <label class="kintoneplugin-label">
+        ② 一覧画面上で表示するツールチップ情報を設定します。
+      </label>
+      <div class="kintoneplugin-desc">
+        ※ツールチップを設定する場合、予めチップを表示するためのdivやpなどのhtml要素を設定してください。
+        <input type="button" value="　tips追加　" class="tips-config-list-add-button">
+      </div>
+      <hr>
+      <div class="kintone-plugin-table-data">
+        <!-- TIPS一覧画面設定情報 -->
+        <table name="tips-config-list">
+          <tr>
+            <th>スペース要素id</th>
+            <th>TIPS名</th>
+            <th>TIPSの要素</th>
+            <th>TIPS表示位置</th>
+            <th>TIPSの内容</th>
+            <th>リンク先(a要素の場合)</th>
+            <th>TIPS削除</th>
+          </tr>
+        </table>
+      </div>
+      
+      <label class="kintoneplugin-label">
+        ③ TIPに関するCSSを設定します。
+      </label>
+      <div class="kintoneplugin-desc">
+        CSSを設定します。
+      </div>
+      <hr>
+      <div class="kintone-plugin-table-data">
+        <!-- CSS設定情報 -->
+        <table name="css-config">
+          <tr>
+            <th>CSS種別</th>
+            <th>文字色</th>
+            <th>文字サイズ</th>
+            <th>背景色</th>
+          </tr>
+          <tr> 
+            <td>TIPS</td>
+            <td><input type="color" value="#333333"></td>
+            <td><input type="number" value="12"></td>
+            <td><input type="color" value="#CCDDAA"></td>
+          </tr>
+          <tr>
+            <td>TIPS:hover</td>
+            <td><input type="color" value="#FFFFFF"></td>
+            <td><input type="number" value="12"></td>
+            <td><input type="color" value="#889966"></td>
+          </tr>
+          <tr> 
+            <td>TIPS-LINK</td>
+            <td><input type="color" value="#333333"></td>
+            <td><input type="number" value="12"></td>
+            <td><input type="color" value="#ADD8E6"></td>
+          </tr>
+          <tr>
+            <td>TIPS-LINK:hover</td>
+            <td><input type="color" value="#FFFFFF"></td>
+            <td><input type="number" value="12"></td>
+            <td><input type="color" value="#667744"></td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <p class="kintoneplugin-row">
+      <button class="js-cancel-button kintoneplugin-button-dialog-cancel" type="button"> キャンセル </button>
+      <button class="kintoneplugin-button-dialog-ok"> 保存 </button>
+    </p>
+  </form>
+</section>
