@@ -1,7 +1,7 @@
 /*
 MIT License
 Copyright (c) 2021 nononosuque
-
+https://github.com/nononosuque/tippyjs-kintone-plugin
 */
 
 jQuery.noConflict();
