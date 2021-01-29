@@ -3,7 +3,7 @@ tippyjsライブラリを利用して、kintoneの一覧/登録/編集/詳細画
 現在の仕様ではマウスオーバーした際に表示される仕組みとなります。
 
 ### DEMO/デモ
-[こちら](https://sashisuseho.com/tippyjs-kintone-plugin/でデモを確認できます
+[こちら](https://sashisuseho.com/tippyjs-kintone-plugin/)でデモを確認できます
 
 ### Features/
 kintonenのフィールドに対する補足説明や一覧画面上の補足説明な
